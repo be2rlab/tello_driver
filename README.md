@@ -7,10 +7,12 @@ Communicating with the Tello drone can be done either using official [Tello SDK]
 Developing of the tello_driver ROS package is inspired by [tello_driver](https://github.com/anqixu/tello_driver), which by now diverged considerately from the original work. Furthermore, development of this ROS package pursues not to modify the TelloPy library, but instead apply any modification or addition to the ros_driver package in an encapsulated manner. This prevents breaking functionalities when updating the TelloPy library.
 
 ## Some notes on drone control
-1. Explanatory drawing of the reference frames 
+* Explanatory drawing of the reference frames 
+
 <img src="https://user-images.githubusercontent.com/12969547/75227366-1b808900-57bf-11ea-982c-a6b22f298abf.png" width="400">
-2. _Twist_ of `/tello/cmd_vel` topic is expressed  in _{body}_ frame
-3. _Odometry_ of `/tello/odom` topic  is expressed in _{odom}_ frame
+
+* _Twist_ of `/tello/cmd_vel` topic is expressed  in _{body}_ frame
+* _Odometry_ of `/tello/odom` topic  is expressed in _{odom}_ frame
 
 
 ## Installation
